@@ -4,9 +4,7 @@
 	<link rel="stylesheet" type="text/css" href="DropDownMenu.css">
 </head>
 
-<body>
-	<h1 ALIGN=CENTER><img src="heading2.gif" width="400" height="100"></h1>
-
+<body>	
 	<!-- Drop down menu -->
 	<nav id="primary_nav_wrap">
 		<ul>
@@ -24,33 +22,48 @@
 			  <li><a href="#">TWITTER</a></li>
 			</ul>
 		  </li>
-		  
-		  <li><a href="#">LIVE</a>
-			<ul>
-			  <li><a href="#">ROD LAVER ARENA</a></li>
-			  <li><a href="#">MCG</a></li>
-			</ul>
-		  <li>
-		  
+  
 		  <!-- Have to make below link non-active to 
 				keep formatting and copy text capabilities -->
-		  <li><a href="#" class="not-active">CONTACT:     hello@smellslikesalon.com</a></li>
+		  <li><a href="#" class="not-active">CONTACT:     HELLO@SMELLSLIKEGLOSS.COM</a></li>
 		</ul>
 	</nav>
-
-	<!-- Video -->
-	<div class="video-container">
-	<!-- Uncomment to change to our video
-		<video class="centered">
-		  <source src="mov_bbb.mp4" type="video/mp4">
-		</video>
-	-->
 	
-	<iframe src="https://www.youtube.com/embed/9h5mwoTwDBk" 
-		frameborder="0" allowfullscreen>
-	</iframe>
-		
+	<br>
+	<br>
+    <img class="displayed" src="heading2.gif" width="400" height="100">
+
+	
+	<!-- Video -->
+	<div class="video-container"> 
+		<video class="centered" id="video" autoplay loop>
+		  <source src="small.mp4" type="video/mp4">
+		</video>
 	</div>
+	
+	<script>
+		var v = document.getElementById('video');
+		v.addEventListener(
+			'play', 
+			function() 
+			{ 
+				v.play();
+			}, 
+			false);
+
+		v.onclick = function() 
+		{
+			if (v.paused) 
+			{
+				v.play();
+			} 
+			else 
+			{
+				v.pause();
+			}
+			return false;
+		};
+	</script>
 </body>
 
 </html>
