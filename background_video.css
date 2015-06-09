@@ -33,7 +33,7 @@ html {
 	height:70%; 
 }
 
-video#bgvid 
+video#vidfullscreen 
 {
 	position: fixed;
 	top: 50%;
@@ -45,6 +45,5 @@ video#bgvid
 	z-index: -100;
 	-webkit-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
-	background: url(polina.jpg) no-repeat;
 	background-size: cover;
 }
