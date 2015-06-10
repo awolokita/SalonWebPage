@@ -6,7 +6,7 @@
     margin-right: auto;
 	padding: 0;
 	}
-
+/*
 html { 
   background: url(test.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -14,7 +14,7 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
-
+*/
 .video-container
 {
 	position:relative;
@@ -33,7 +33,7 @@ html {
 	height:70%; 
 }
 
-video#vidfullscreen 
+video#vidfullscreen  
 {
 	position: fixed;
 	top: 50%;

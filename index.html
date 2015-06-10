@@ -8,60 +8,48 @@
 	<!-- Drop down menu -->
 	<nav id="primary_nav_wrap">
 		<ul>
-		  <li><a href="#">MUSIC</a>
-			<ul>
-			  <li><a href="#" target="_blank">SOUNDCLOUD</a></li>
-			  <li><a href="#" target="_blank">BANDCAMP</a></li>
-			</ul>
-		  </li>
+		  <li><a href="https://soundcloud.com/g-l-o-s-s" target="_blank">MUSIC</a></li>
 		  
-		  <li><a href="#">SOCIAL</a>
-			<ul>
-			  <li><a href="#" target="_blank">FACEBOOK</a></li>
-			  <li><a href="#" target="_blank">INSTAGRAM</a></li>
-			  <li><a href="#" target="_blank">TWITTER</a></li>
-			</ul>
+		  <li><a href="https://gloss4life.bandcamp.com/" target="_blank">STORE</a></li>
+		  
+  		  <li><a href="https://www.facebook.com/pages/Smellslikesalon/830160580384240" target="_blank">CONNECT</a>
 		  </li>
   
 		  <!-- Have to make below link non-active to 
 				keep formatting and copy text capabilities -->
-		  <li><a href="#" class="not-active">CONTACT:     HELLO@SMELLSLIKEGLOSS.COM</a></li>
+		  <li><a href="#" class="not-active">HELLO@SMELLSLIKEGLOSS.COM</a></li>
+		  <li><button class="btn" id="vidpause" onclick="clickHandler()"><b>PAUSE  BACKGROUND</b></button></li>
 		</ul>
 	</nav>
 	
 	<br>
 	<br>
-    <img class="displayed" src="heading2.gif" width="400" height="100">
-
+    <!-- <img class="displayed" src="heading2.gif" width="400" height="100"> -->
 	
 	<!-- Video -->
-	<div class="video-container"> 
-		<video id="vidfullscreen" autoplay loop>
+		<video id="vidfullscreen" onclick="clickHandler()" autoplay loop>
 		  <source src="small.mp4" type="video/mp4">
 		</video>
-	</div>
+		
 	<script>
-		var v = document.getElementById('pp');
-		v.addEventListener(
-			'play', 
-			function() 
-			{ 
-				v.play();
-			}, 
-			false);
-
-		v.onclick = function() 
-		{
-			if (v.paused) 
+		function clickHandler()
+		{ 
+			var v = document.getElementById("vidfullscreen");
+			var pauseButton = document.getElementById("vidpause");
+			
+			if(v.paused)
 			{
 				v.play();
-			} 
-			else 
+				pauseButton.innerHTML = "PAUSE  BACKGROUND";
+				pauseButton.style.fontWeight = 'bold';
+			}
+			else
 			{
 				v.pause();
-			}
-			return false;
-		};
+				pauseButton.innerHTML = "PLAY  BACKGROUND";
+				pauseButton.style.fontWeight = 'bold';
+			}	
+		}
 	</script>
 </body>
 

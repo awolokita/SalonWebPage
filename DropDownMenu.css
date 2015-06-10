@@ -1,7 +1,7 @@
 /*Distance from top of page*/
 #primary_nav_wrap
 {
-	margin-top:5px
+	margin-top:10px
 }
 
 /*Justification*/
@@ -15,7 +15,7 @@
 	padding:0;
 }
 
-/*Font attributes*/
+/*Title Font attributes*/
 #primary_nav_wrap ul a
 {
 	display:block;
@@ -23,8 +23,8 @@
 	text-decoration:none;
 	font-weight:700;
 	font-size:10px;
-	line-height:32px;
-	padding:0 15px;
+	line-height:20px;
+	padding:0 10px;
 	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif
 }
 
@@ -52,6 +52,7 @@
 	left:0;
 	background:rgb(238,221,221);
 	padding:0;
+	line-height:20px;
 }
 
 /*Background Colour of dropdown menu CONTENT when hovering*/
@@ -91,3 +92,20 @@
    cursor: default;
 }
 
+/*PAUSE button attributes*/
+.btn {
+  font-family: Arial;
+  color: rgb(140,140,140);
+  font-size: 10px;
+  padding: 0 10px;
+  text-decoration: none;
+  background-color: Transparent;
+  border: none;
+  outline: none;
+  line-height:20px;
+}
+
+.btn:hover {
+  background: #eedddd;
+  text-decoration: none;
+}
