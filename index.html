@@ -5,6 +5,25 @@
 </head>
 
 <body>	
+	<!-- DETECT DEVICE -->
+	<script type="text/javascript">
+		if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) 
+		{
+			/*iPhone/iPod site*/
+			if(navigator.userAgent.match('CriOS'))
+			{}
+			else
+			{
+				location.replace("http://YOUR-MOBILE-SITE.com");
+			}		
+		}
+		else if ((navigator.userAgent.match(/Android/i))) 
+		{
+			/*Android site*/
+			location.replace("http://YOUR-MOBILE-SITE.com");
+		}
+	</script>
+		
 	<!-- Drop down menu -->
 	<nav id="primary_nav_wrap">
 		<ul>
@@ -27,10 +46,13 @@
     <!-- <img class="displayed" src="heading2.gif" width="400" height="100"> -->
 	
 	<!-- Video -->
+	<div class="video-container">
 		<video id="vidfullscreen" onclick="clickHandler()" autoplay loop>
 		  <source src="small.mp4" type="video/mp4">
 		</video>
-		
+	</div>
+	
+	<!-- PAUSE CLICK HANDLER -->
 	<script>
 		function clickHandler()
 		{ 
