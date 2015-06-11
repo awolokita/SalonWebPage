@@ -6,18 +6,18 @@ if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i
 	{}
 	else
 	{
-		location.replace("http://YOUR-MOBILE-SITE.com");
+		location.replace("http://www.smellslikesalon.com/mobile/");
 	}
 }
 else if ((navigator.userAgent.match(/Android/i))) 
 {
 	/*Android*/
-	location.replace("http://YOUR-MOBILE-SITE.com");
+	location.replace("http://www.smellslikesalon.com/mobile/");
 }
 else if ((navigator.userAgent.match(/Windows Phone/i))) 
 {
 	/*Windows Phone*/
-	location.replace("http://YOUR-MOBILE-SITE.com");
+	location.replace("http://www.smellslikesalon.com/mobile/");
 }
 
 /*----------------- Pause button click handler -----------------------*/
