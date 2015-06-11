@@ -1,7 +1,7 @@
 /*----------------- Detect phone and redirect -------------------------*/
 if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) 
 {
-	/*iPhone/iPod site*/
+	/*iPhone/iPod*/
 	if(navigator.userAgent.match('CriOS'))
 	{}
 	else
@@ -11,12 +11,12 @@ if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i
 }
 else if ((navigator.userAgent.match(/Android/i))) 
 {
-	/*Android site*/
+	/*Android*/
 	location.replace("http://YOUR-MOBILE-SITE.com");
 }
 else if ((navigator.userAgent.match(/Windows Phone/i))) 
 {
-	/*Android site*/
+	/*Windows Phone*/
 	location.replace("http://YOUR-MOBILE-SITE.com");
 }
 
