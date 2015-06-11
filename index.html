@@ -1,29 +1,13 @@
 <html>
 <head>
+	<title>SALON</title>
 	<link rel="stylesheet" type="text/css" href="background_video.css">
 	<link rel="stylesheet" type="text/css" href="DropDownMenu.css">
+	<script type="text/javascript" src="JavaScript_code.js"></script>
+	<script type="text/javascript" src="//fast.eager.io/bFLOCw6O6y.js"></script>
 </head>
 
 <body>	
-	<!-- DETECT DEVICE -->
-	<script type="text/javascript">
-		if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) 
-		{
-			/*iPhone/iPod site*/
-			if(navigator.userAgent.match('CriOS'))
-			{}
-			else
-			{
-				location.replace("http://YOUR-MOBILE-SITE.com");
-			}		
-		}
-		else if ((navigator.userAgent.match(/Android/i))) 
-		{
-			/*Android site*/
-			location.replace("http://YOUR-MOBILE-SITE.com");
-		}
-	</script>
-		
 	<!-- Drop down menu -->
 	<nav id="primary_nav_wrap">
 		<ul>
@@ -36,7 +20,7 @@
   
 		  <!-- Have to make below link non-active to 
 				keep formatting and copy text capabilities -->
-		  <li><a href="#" class="not-active">HELLO@SMELLSLIKEGLOSS.COM</a></li>
+		  <li><a href="#" class="not-active">HELLO@SMELLSLIKESALON.COM</a></li>
 		  <li><button class="btn" id="vidpause" onclick="clickHandler()"><b>PAUSE  BACKGROUND</b></button></li>
 		</ul>
 	</nav>
@@ -51,28 +35,6 @@
 		  <source src="small.mp4" type="video/mp4">
 		</video>
 	</div>
-	
-	<!-- PAUSE CLICK HANDLER -->
-	<script>
-		function clickHandler()
-		{ 
-			var v = document.getElementById("vidfullscreen");
-			var pauseButton = document.getElementById("vidpause");
-			
-			if(v.paused)
-			{
-				v.play();
-				pauseButton.innerHTML = "PAUSE  BACKGROUND";
-				pauseButton.style.fontWeight = 'bold';
-			}
-			else
-			{
-				v.pause();
-				pauseButton.innerHTML = "PLAY  BACKGROUND";
-				pauseButton.style.fontWeight = 'bold';
-			}	
-		}
-	</script>
 </body>
 
 </html>
